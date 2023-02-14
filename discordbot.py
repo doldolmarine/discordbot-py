@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 while True:
+    token = os.environ['TOKEN']
     comdo =';'
     app = commands.Bot(intents
                        =discord.Intents.default(), command_prefix=comdo ) #command_prefix=comdo     
@@ -16,4 +17,4 @@ while True:
             await ctx.channel.sand('반갑습니다')
         
 
-    app.run('MTA3NDkxNDg5ODMwNTM1NTc3Ng.GF672Y.BEprEDtepCdDE-p6_jMeXQKAQKYAv88pUXXu5Y')
+    app.run(token)
